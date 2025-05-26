@@ -39,7 +39,6 @@ export default function CoffeeForm(props) {
                 cost: coffeeCost,
             };
             newGlobalData[timestamp] = newData;
-            console.log(timestamp, selectedCoffee, coffeeCost);
 
             // update the global state
             setGlobalData(newGlobalData);
@@ -55,7 +54,6 @@ export default function CoffeeForm(props) {
             );
 
         } catch (error) {
-            console.log(error.message);
         } finally{
             setSelectedCoffee(null);
             setCoffeeCost(0)

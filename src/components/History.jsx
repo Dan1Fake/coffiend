@@ -25,7 +25,6 @@ export default function History() {
                         })
 
                         const summary = `${coffee.name} | ${timeSinceConsume} since | $${coffee.cost} | ${remainingAmount}mg / ${originalAmount}mg`;
-                        console.log(summary)
                         return (
                             <div title={summary} key={coffeeIndex}>
                                 <i className="fa-solid fa-mug-hot"></i>

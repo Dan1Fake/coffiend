@@ -51,7 +51,7 @@ export default function Stats() {
                 </StatCard>
                 <StatCard title="Total Cost ($)">
                     <p>
-                        <i className="fa-solid fa-dollar-sign"></i> <span className="stat-text">{console.log(stats)}{stats.total_cost}</span>
+                        <i className="fa-solid fa-dollar-sign"></i> <span className="stat-text">{stats.total_cost}</span>
                     </p>
                 </StatCard>
                 <table className="stat-table">

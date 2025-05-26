@@ -27,7 +27,6 @@ export default function Authentication(props) {
             }
             setShowModal(false);
         } catch (error) {
-            console.log(error.message);
             setAuthError(error.message);
             return;
         } finally {
@@ -56,7 +55,7 @@ export default function Authentication(props) {
             />
             <div>
                 <button onClick={handleAuthenticate}>{isAuthenticating ? "Authenticating..." : "Submit"}</button>
-                <span style={{ color: "#ed4337" }}> ❌{authError && authError}</span>
+                <span style={{ color: "#ed4337" }}>{authError && (" ❌Invalid-Credentials")}</span>
             </div>
 
             <hr />
